@@ -4,8 +4,8 @@ name: CI for dagger
 on:
   push:
     branches:
-      -main
-      
+      - main
+
   # allow manual dispatch of the workflow
   workflow_dispatch:
 

@@ -23,7 +23,7 @@ jobs:
           # assumes a Go project
           # modify to use different function(s) as needed
           module: github.com/kpenfound/dagger-modules/golang@v0.2.0
-          args: test --source=../..
+          args: test --source=.
           # assumes the Dagger Cloud token is in
           # a repository secret named DAGGER_CLOUD_TOKEN
           # set via the GitHub UI/CLI

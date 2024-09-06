@@ -24,7 +24,7 @@ jobs:
           module: ./dagger
           args: test --source=.
 
-      - name: Call Dagger Function - test
+      - name: Call Dagger Function - build
         uses: dagger/dagger-for-github@v5
         with:
           version: "latest"

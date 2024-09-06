@@ -14,8 +14,8 @@ jobs:
       # Checkout the project code
       - name: Checkout
         uses: actions/checkout@v4
-      -
-        name: Call Dagger Function
+      
+      - name: Call Dagger Function
         uses: dagger/dagger-for-github@v6
         with:
           version: "latest"
@@ -23,8 +23,10 @@ jobs:
           # assumes a Go project
           # modify to use different function(s) as needed
           module: github.com/kpenfound/dagger-modules/golang@v0.2.0
-          args: test --source=../../
+          args: test --source=.
           # assumes the Dagger Cloud token is in
           # a repository secret named DAGGER_CLOUD_TOKEN
           # set via the GitHub UI/CLI
           # cloud-token: ${{ secrets.DAGGER_CLOUD_TOKEN }}
+        env:
+          GO111MODULE: off

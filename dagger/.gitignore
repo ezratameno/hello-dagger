@@ -1,4 +1,4 @@
-/dagger.gen.go
+dagger.gen.go
 /internal/dagger
 /internal/querybuilder
 /internal/telemetry
